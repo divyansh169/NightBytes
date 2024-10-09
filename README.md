@@ -3,10 +3,12 @@
 Technologies Used:
 
 - Android App (Java and XML with Firebase Database): Java, XML, Firebase, Firebase Cloud Functions, Firebase Cloud Messaging, Dialogflow
-  App Link : https://play.google.com/store/apps/details?id=com.citymart.app
+
+  - App Link : https://play.google.com/store/apps/details?id=com.citymart.app
 
 - Web App (React JS with Firebase Backend): HTML, CSS, Javascript, React JS, Redux, Firebase (Database),
-  Web Link : https://fooddelivery-d9c7a.web.app/
+
+  - Web Link : https://fooddelivery-d9c7a.web.app/
 
 - Web App (React JS with Java Backend): React JS, Redux, Spring Boot, Hibernate, MySQL, JWT, AWS EC2, AWS S3, AWS RDS, Docker, Jenkins
 
