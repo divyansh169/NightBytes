@@ -6,11 +6,15 @@ Technologies Used:
 
   - App Link : https://play.google.com/store/apps/details?id=com.citymart.app
 
-- Web App (React JS with Firebase Backend): HTML, CSS, Javascript, React JS, Redux, Firebase (Database),
+- Web App (React JS with Firebase Backend): HTML, CSS, Javascript, React JS, Redux, Firebase (Database), Node.js, Custom Chatbot
 
   - Web Link : https://fooddelivery-d9c7a.web.app/
 
-- Web App (React JS with Java Backend): React JS, Redux, Spring Boot, Hibernate, MySQL, JWT, AWS EC2, AWS S3, AWS RDS, Docker, Jenkins
+- Web App (React JS with Java Backend): React JS, Redux, Spring Boot, Hibernate, MySQL, JWT, AWS EC2, AWS S3, AWS RDS, Docker, Kubernetes, Jenkins
+
+- Custom Chatbot: Python, React Js, Fine-Tuned LLM (OpenAI GPT-4), CLIP, TensorFlow, Docker, Kubernetes, Terraform, Flask, FastAPI, AWS (EC2, S3), GCP, Apache Kafka, TensorFlow Lite, ONNX Runtime, Go, Rust
+
+
 
 Features:
 
