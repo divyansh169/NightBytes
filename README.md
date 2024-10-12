@@ -1,4 +1,4 @@
-# NightBytes
+# Multi-Vendor E-commerce Full Stack Application with Custom Chatbot
 
 Technologies Used:
 
