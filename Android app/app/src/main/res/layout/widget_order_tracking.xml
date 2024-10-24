@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+
+    <FrameLayout
+        android:id="@+id/step1_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/circular_white_border">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="step1.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="false"
+            android:alpha="0.5" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_toRightOf="@id/step1_container"
+        android:background="@drawable/dotted_line"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <FrameLayout
+        android:id="@+id/step2_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/line1"
+        android:background="@drawable/circular_white_border">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="step2.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="false"
+            android:alpha="0.5" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_toRightOf="@id/step2_container"
+        android:background="@drawable/dotted_line"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <FrameLayout
+        android:id="@+id/step3_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/line2"
+        android:background="@drawable/circular_white_border">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/step3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="takeawayanim.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="false"
+            android:alpha="0.5" />
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/widget_layout"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:background="@color/gray">-->
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/step1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:lottie_fileName="step1.json"-->
+<!--        app:lottie_loop="false"-->
+<!--        app:lottie_autoPlay="false"-->
+<!--        android:alpha="0.5" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/line1"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_toRightOf="@id/step1"-->
+<!--        android:background="@drawable/dotted_line"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginRight="8dp" />-->
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/step2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toRightOf="@id/line1"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:lottie_fileName="step2.json"-->
+<!--        app:lottie_loop="false"-->
+<!--        app:lottie_autoPlay="false"-->
+<!--        android:alpha="0.5" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/line2"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_toRightOf="@id/step2"-->
+<!--        android:background="@drawable/dotted_line"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginRight="8dp" />-->
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/step3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toRightOf="@id/line2"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:lottie_fileName="takeawayanim.json"-->
+<!--        app:lottie_loop="false"-->
+<!--        app:lottie_autoPlay="false"-->
+<!--        android:alpha="0.5" />-->
+
+<!--</RelativeLayout>-->
+
+

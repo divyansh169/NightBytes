@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_border"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/gray_border"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/datee"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Date: 23/11/2023"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/cname"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Magan Dewasi"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:textColor="@color/darkgray"-->
+<!--                android:textSize="17dp" />-->
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subur"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Campus Parlour"
+                android:textColor="@color/crimson"
+                android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/Tprice"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:layout_height="wrap_content"
+                        android:text="Total: ₹ 660"
+                        android:textColor="@color/green"
+                        android:textSize="20dp" />
+
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/Tprice"-->
+                    <!--                    android:visibility="gone"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginRight="15dp"-->
+                    <!--                    android:text="Total rs: 2000"-->
+                    <!--                    android:textColor="@color/darkgray" />-->
+<!--                </LinearLayout>-->
+
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/Dprice"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Price: ₹ 220"-->
+<!--                android:textColor="@color/darkgray"-->
+<!--                android:textSize="17dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/Dqty"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=" x 3"-->
+
+<!--                    android:textColor="@color/darkgray"-->
+<!--                    android:textSize="17dp" />-->
+
+
+
+
+
+<!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/Dprice"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="12dp"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:layout_marginRight="4dp"-->
+            <!--                android:text="Price: Rs 50"-->
+            <!--                android:textColor="@color/darkgray"-->
+            <!--                android:textSize="15sp" />-->
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_border"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/custname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Name: Divyansh Bansal"
+                android:textColor="@color/gray"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/mobi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Phone: +916396572084"
+                android:textColor="@color/gray"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/addre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Address: BH-3 LMMIIT Jaipur"
+                android:textColor="@color/gray"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/ordtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Order Type: Delivery"
+                android:textColor="@color/gray"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

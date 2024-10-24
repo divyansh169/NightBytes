@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="551dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_shape"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.456">
+
+
+                <Button
+                    android:id="@+id/post_dish"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Post New Product"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/post_banners"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Post New Banner"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/addrzpid"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Add/Update Details"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/addcoup"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Add/Update Details"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/stats"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="View Orders Stats"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:id="@+id/hr4fdfr"
+                        android:layout_width="95dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#878787" />
+
+                    <TextView
+                        android:id="@+id/Custome4rDesfdtailsf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="  Send Notification  "
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="17dp" />
+
+                    <TableRow
+                        android:id="@+id/dsfdf4r"
+                        android:layout_width="80dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#878787" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/notifMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Enter the notification message">
+
+                    </EditText>
+
+
+                    <EditText
+                        android:id="@+id/notifNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Enter the number +91xxx"
+                        android:inputType="phone">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/send_notif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_shape"
+                        android:hint="Send Notification"
+                        android:textStyle="bold"
+                        app:rippleColor="@color/colorPrimaryDark">
+
+                    </Button>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:id="@+id/hr4fdr"
+                        android:layout_width="75dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#878787" />
+
+                    <TextView
+                        android:id="@+id/Custome4rDesfdtails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="  Add/Remove Company  "
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="17dp" />
+
+                    <TableRow
+                        android:id="@+id/dsfd4r"
+                        android:layout_width="60dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#878787" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/delstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/darkgray"
+                    android:textSize="26dp">
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Spinner
+                    android:id="@+id/suburban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginTop="5dp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="10dp">
+
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="17dp"
+                        android:background="@drawable/btnblueish"
+                        android:text="ADD ITEM"
+                        android:textColor="@color/white" />
+
+
+                    <!--                <com.airbnb.lottie.LottieAnimationView-->
+                    <!--                    android:id="@+id/animationView"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:visibility="invisible"-->
+                    <!--                    app:lottie_fileName="loadingutensils.json"-->
+                    <!--                    app:lottie_autoPlay="true"-->
+                    <!--                    app:lottie_loop="true"/>-->
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="10dp">
+
+                    <Button
+                        android:id="@+id/removebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="17dp"
+                        android:background="@drawable/btnred"
+                        android:text="Remove Item"
+                        android:textColor="@color/white" />
+
+
+                    <!--                <com.airbnb.lottie.LottieAnimationView-->
+                    <!--                    android:id="@+id/animationView"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:visibility="invisible"-->
+                    <!--                    app:lottie_fileName="loadingutensils.json"-->
+                    <!--                    app:lottie_autoPlay="true"-->
+                    <!--                    app:lottie_loop="true"/>-->
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="10dp">
+
+                    <Button
+                        android:id="@+id/veflay"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginBottom="17dp"
+                        android:background="@color/crimson"
+                        android:text="Verify phone to get notification"
+                        android:textColor="@color/white" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/delcomlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16dp"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/enableautaccept"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Enable Auto Accept"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/autolayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Delivery Charge: ₹"
+                            android:textColor="@color/darkgray"
+                            android:textSize="17dp" />
+
+                        <EditText
+                            android:id="@+id/deliverychargetextauto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="(if any)"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textSize="16dp">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/paydlbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/button_shape"
+                            android:gravity="center"
+                            android:text="Enable POD"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/nopaybtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/btnred"
+                            android:gravity="center"
+                            android:text="Disable POD"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/confirmbtn"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btnblueish"
+                        android:text="Confirm To Start Automate"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/disableautaccept"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Disable Auto Accept"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fjnfjfrknd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/background_shape"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/pendcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pending Orders: "
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pending Orders: "
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Orders: "
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

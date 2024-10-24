@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">NightBytes</string>
+    <string name="channel_name">Channel_Name</string>
+    <string name="channel_description">Channel_Description</string>
+    <string name="today">Today</string>
+
+
+    <string name="cancellation_policy">
+    <![CDATA[By clicking the "Confirm and Proceed to Cancel" button, you agree to the following policy:\n\n
+1. Order Cancellation:\n
+- If the user cancels the order, a cancellation charge will be applied.\n\n
+2. Cancellation Charge:\n
+- A cancellation charge is applicable and will not be refunded under any circumstances.\n
+- This charge is considered a convenience charge for processing the cancellation.\n\n
+3. Refund Policy:\n
+- All payments made for the cancellation charge are non-refundable.\n
+]]>
+</string>
+
+
+    <string name="terms_and_conditions">
+    <![CDATA[By confirming your order and choosing the online pay on delivery option, you agree to the following terms and conditions:\n\n
+1. Order Confirmation:\n
+- By clicking the "Confirm and Proceed to Pay" button below, you acknowledge that you have reviewed and confirmed your order details, including the items, quantities, and total amount.\n\n
+2. Payment Method:\n
+- The payment for your order will be processed online at the time of confirmation. This payment is non-refundable under any circumstances.\n\n
+3. Delivery Confirmation:\n
+- By selecting the online pay on delivery option, you confirm that you will receive the ordered items at the provided delivery address.\n\n
+4. Refund Policy:\n
+- All payments made online for your order are non-refundable.\n
+- There will be no refunds for any paid orders, including but not limited to order cancellations, changes, or dissatisfaction with the delivered items.\n\n
+5. Order Changes and Cancellations:\n
+- Once an order is confirmed and payment is made online, no changes or cancellations can be made.\n
+]]>
+</string>
+
+    <string name="wallet_recharge_policy">
+    <![CDATA[By recharging your wallet, you agree to the following terms and conditions:\n\n
+1. Wallet Recharge Confirmation:\n
+- By clicking the "Confirm Recharge" button below, you acknowledge that you have reviewed and confirmed the wallet recharge details, including the recharge amount and any applicable charges.\n\n
+2. Recharge Amount:\n
+- The minimum recharge amount is 1000 INR.\n
+- You can recharge your wallet with any amount greater than 1000 INR.\n
+- The recharge amount will be added to your wallet balance immediately after successful payment.\n\n
+3. Usage and Deductions:\n
+- The wallet balance can be used for various purposes, including but not limited to order payments, subscription fees, and promotional features.\n
+- The wallet balance will be deducted in increments based on the usage, features, and sales generated through the app.\n\n
+4. Recharge Refund Policy:\n
+- All wallet recharge transactions are non-refundable.\n
+- There will be no refunds for any wallet recharge, including but not limited to changes in sales, dissatisfaction with the app\'s performance, or any other circumstances.\n\n
+5. Wallet Balance Expiry:\n
+- The wallet balance does not have an expiration date, but app reserves the right to modify this policy in the future. Any changes will be communicated in advance.\n\n
+- After wallet recharge expiry no new orders will be there and customers will not be able to use your store to order products associated with your store.\n\n
+6. Recharge Security:\n
+- Ensure that you are using a secure and trusted payment method for wallet recharge. We are not responsible for any unauthorized transactions.\n\n
+7. Recharge Verification:\n
+- For security purposes, We may verify wallet recharge transactions through additional authentication steps.\n\n
+8. Modification of Terms:\n
+- We reserves the right to modify the wallet recharge policy at any time. Any changes will be effective immediately and communicated to users.\n\n
+9. Contact Support:\n
+- For any issues related to wallet recharge, please contact our customer support at support divyanshbansal169@gmail.com.\n\n
+Thank you for using the app!]]>
+    </string>
+
+
+    <string-array name="State">
+        <item>AndhraPradesh</item>
+        <item>ArunachalPradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chattisgarh</item>
+        <item>DadraandNagarHaveli</item>
+        <item>DamanandDiu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>HimachalPradesh</item>
+        <item>JammuandKashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Ladakh</item>
+        <item>MadhyaPradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Puducherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>TamilNadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>UttarPradesh</item>
+        <item>Uttarakhand</item>
+        <item>WestBengal</item>
+
+    </string-array>
+
+    <!--    <string-array name="DishName">-->
+    <!--        <item>Thepla</item>-->
+    <!--        <item>Dal Rice</item>-->
+    <!--        <item>Dhokla</item>-->
+    <!--        <item>Sabji Roti</item>-->
+    <!--        <item>Kadhi Khichdi</item>-->
+    <!--        <item>Puri bhaji</item>-->
+    <!--        <item>Dal Dhokdi</item>-->
+    <!--        <item>Undhiyu</item>-->
+    <!--        <item>Aloo Paratha</item>-->
+    <!--        <item>Patra</item>-->
+    <!--        <item>Khandvi</item>-->
+    <!--        <item>Gulab Jamun</item>-->
+    <!--        <item>SevTomato bhakri</item>-->
+    <!--        <item>Shrikhand</item>-->
+    <!--        <item>Palak Paneer</item>-->
+    <!--        <item>Khulcha</item>-->
+    <!--        <item>Makki di roti</item>-->
+    <!--        <item>Gobi Partha</item>-->
+    <!--        <item>Biryani</item>-->
+    <!--        <item>Rajma</item>-->
+    <!--        <item>Bhindi Fry</item>-->
+    <!--        <item>Dum Biryani</item>-->
+    <!--        <item>Rumali roti</item>-->
+    <!--        <item>Dal Makhni</item>-->
+    <!--        <item>Samosa</item>-->
+    <!--        <item>Kachori</item>-->
+    <!--        <item>Menduwada</item>-->
+    <!--        <item>Pulav</item>-->
+    <!--        <item>Pav Bhaji</item>-->
+    <!--        <item>Misal Pav</item>-->
+    <!--        <item>Mix Vegetable</item>-->
+    <!--        <item>Muffins</item>-->
+    <!--        <item>DalFry JerraRice</item>-->
+    <!--        <item>Bengali sweet</item>-->
+    <!--        <item>Puranpoli</item>-->
+    <!--        <item>Egg Curry</item>-->
+    <!--        <item>Pomfret Fish</item>-->
+    <!--        <item>Egg Bhurji</item>-->
+    <!--        <item>Dum chicken</item>-->
+    <!--        <item>Hyderabadi Chicken Biryni</item>-->
+
+    <!--    </string-array>-->
+
+    <!--    <string name="app_name">GooglePayTest</string>-->
+    <string name="post_banner">Post Banner</string>
+</resources>

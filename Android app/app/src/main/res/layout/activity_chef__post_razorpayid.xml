@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic14"
+    tools:context="com.citymart.app.ChefFoodPanel.Chef_PostDish">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.499">-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView"-->
+        <!--            android:layout_width="105dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:text="Product"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="17dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.191"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.37" />-->
+
+        <!--        <Spinner-->
+        <!--            android:id="@+id/dishes"-->
+        <!--            android:layout_width="162dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_marginLeft="12dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:entries="@array/DishName"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/textView"-->
+        <!--            app:layout_constraintVertical_bias="0.04" />-->
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/dishes"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.534"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--            app:layout_constraintVertical_bias="0.062">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Seller's Razorpay ID"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="@color/white" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/quantity"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.534"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/description"-->
+<!--        app:layout_constraintVertical_bias="0.095">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Quantity"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="@color/white" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/price"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.534"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/quantity"-->
+<!--        app:layout_constraintVertical_bias="0.192">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Price"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="@color/white" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/sellerid"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Write Your Razorpay ID Here"-->
+<!--            android:inputType="text"-->
+<!--            android:textColor="@color/white" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/sellernoteedittext"-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="72dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:hint="write announcement here"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/rzpid"-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/black"-->
+<!--        android:hint="mention razorpayid here"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white" />-->
+
+    <!--    <EditText-->
+<!--        android:id="@+id/couponbenefit"-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="84dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:hint="coupon benefit here write: discount or freeitem"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/selleraddnote"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/couponvalue"-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="34dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:hint="coupon value here"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/selleraddnote"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/couponcode"-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:hint="write coupon code"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"/>-->
+
+    <!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:textColor="@color/blueish"-->
+<!--        android:textSize="14dp"-->
+<!--        android:text="Ex1:-  CAF100,1,349,100  :-means CAF100(6 characters any code of your choice), 1(for discount), 349(mininum order value), 100(discount value)...............Ex2:-  CAFEHOLI,2,699,coffee  :-means CAFHOLI(any code of your choice), 2(for free item), 699(mininum order value), coffee(free item name)"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/couponcode">-->
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Announcement:"
+            android:textColor="@color/darkgray"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/sellernoteedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Write announcement"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/allann"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                tools:layout_editor_absoluteY="813dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/selleraddnote"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/btnred"
+                android:text="Add/Update Ann"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/allann" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutj4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selleraddnote">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Razorpay ID:"
+            android:textColor="@color/darkgray"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/rzpid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Write razorpay id"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/rzpkey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Write razorpay key"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Order No:  "
+                android:textColor="@color/darkgray"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9999999999"
+                android:textColor="@color/darkgray"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/allids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutj4">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/asd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/allids">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/RegisterRazorpayID"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/btnred"
+                android:text="Add Razorpay Details"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/asd" />
+
+    <LinearLayout
+        android:id="@+id/linearLaytdoutj4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterRazorpayID">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Coupon Code:"
+            android:textColor="@color/darkgray"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/couponcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Write coupon code. Ex:CAF100/AKBHOLI"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/coupontype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Write 1 for discount and 2 for free item. Ex:1/2"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/couponmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Mention minimum order value.Ex:250/399"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/couponvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Mention discount value or name of free item. Ex:40/coffee"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Order No:  "
+                android:textColor="@color/darkgray"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9999999999"
+                android:textColor="@color/darkgray"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/allcoupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLaytdoutj4">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/couponaddbtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Update Coupon Details"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/allcoupons" />
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoudjnitj4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/couponaddbtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Today's Special!"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/rzncjdnpid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write todays special here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/todayspecial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoudjnitj4">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/tsbtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Today's Special"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/todayspecial" />
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linjnsikndearLayoudjnitj4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tsbtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Special Offers!"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/rzncnnkjdnpid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/specialoffers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/sobtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Special Offer"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/specialoffers" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/liniddnjnsikndearLayoudjnitj4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sobtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Newly Added"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/rzncnnkkokojdnpid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/NewlyAdded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/liniddnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/nabtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Newly Added"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NewlyAdded" />
+
+
+
+            <LinearLayout
+                android:id="@+id/lininikdnkddnjnsikndearLayoudjnitj4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nabtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Feedback/Queries/Help"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/rznmoncnnkkokojdnpid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/Feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininikdnkddnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/fbtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Feedback/Queries/Help"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Feedback" />
+
+
+
+            <LinearLayout
+                android:id="@+id/openhr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fbtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Opening Hours"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/sthr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tsthr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininikdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/ohbtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Opening Hours"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OpeningHours" />
+
+            <LinearLayout
+                android:id="@+id/openhrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fbtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Online Ordering Timings"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/sthrer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="(start)hour,min,sec,(end)hour,min,sec"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tsthrrr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininikdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/ohbtnnn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Order Timings"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OpeningHours" />
+
+
+            <LinearLayout
+                android:id="@+id/lininiuhbejdnkdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ohbtn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Paytm UPI ID"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/rznmonnbncnnkdlmdpkokojdnpid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/paytmupiid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininiuhbejdnkdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/paytmbun"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Paytm UPI ID"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paytmupiid" />
+
+
+
+            <LinearLayout
+                android:id="@+id/delivch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Set Delivery Charge"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/delchrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/delcharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininiuhbejdnkdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/delchi"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Delivery Charge"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paytmupiid" />
+
+            <LinearLayout
+                android:id="@+id/disct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Set Discount"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/delcfdfhrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/dicount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininiuhbejdnkdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/disctt"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Discount"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paytmupiid" />
+
+
+            <LinearLayout
+                android:id="@+id/minordval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Minimum Order value"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/defdvlchrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Write here"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/minval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininiuhbejdnkdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/minorder"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Min Order Value"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paytmupiid" />
+
+
+            <LinearLayout
+                android:id="@+id/tablenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Number of Tables"
+                    android:textColor="@color/darkgray"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/tabnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Enter Number of Tables"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="italic">
+
+                </EditText>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tibnim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lininiuhbejdnkdnkkkmlmlddmlmlmnjnsikndearLayoudjnitj4">
+
+            </TextView>
+            <Button
+                android:id="@+id/tabnumbtn"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btnred"
+                android:text="Add Table No."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paytmupiid" />
+
+
+
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/RegisterRazorpayID"-->
+<!--        app:layout_constraintVertical_bias="0.888"-->
+<!--        tools:layout_editor_absoluteX="0dp">-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/privacypolicyforrazorpay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:background="@drawable/btnred"-->
+<!--            android:text="Privacy Policy"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.497"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:layout_editor_absoluteY="615dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Termsandconditionforrazorpay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_marginLeft="3dp"-->
+<!--            android:background="@drawable/btnred"-->
+<!--            android:text="Terms and Condition"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.497"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/privacypolicyforrazorpay"-->
+<!--            app:layout_constraintVertical_bias="0.828" />-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/sellerlogoupload"-->
+<!--        android:layout_width="313dp"-->
+<!--        android:layout_height="216dp"-->
+<!--        android:background="@drawable/camerabtnshape"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.113"-->
+<!--        app:srcCompat="@drawable/ic_camera_alt_black_24dp" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
