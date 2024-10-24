@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:maxWidth="300dp"
+            android:text="Address"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/direc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/btnblueish"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:text="Get Direction on Map" />
+
+        <TextView
+            android:id="@+id/MB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:autoLink="phone"
+            android:linksClickable="true"
+            android:layout_marginTop="8dp"
+            android:text="Mobile number: "
+            android:textSize="18dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Total Price: Rs 500"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/chefst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="Payment Done"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/fui_ic_check_circle_black_128dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/countord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/crimson"
+                android:textStyle="bold"
+                android:textSize="35dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lplp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/notifMessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Enter the notification message">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/notifNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Enter the number you want to send"
+                android:inputType="phone">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/send_notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:hint="Send Notification"
+                android:background="@drawable/button_shape"
+                android:textStyle="bold"
+                app:rippleColor="@color/colorPrimaryDark">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/accept1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btnblueish"
+                android:textColor="@color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Accept" />
+
+
+            <Button
+                android:id="@+id/reject1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/btnred"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="end"
+                android:text="Reject" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/remove2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/crimson"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Remove" />
+
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#6F878787" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

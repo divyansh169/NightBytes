@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/couponCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coupon Code"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/discountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discount (₹ or %)"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/minOrderValueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minimum Order Value (₹)"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/freeItemEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Free Item (if applicable)"
+        android:visibility="gone"
+        android:padding="12dp" />
+
+    <Spinner
+        android:id="@+id/couponTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/createCouponButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Create Coupon"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:padding="12dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="16dp" />-->
+    <Button
+        android:id="@+id/createCouponButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_shape"
+        android:drawableRight="@drawable/ic_right_black_24dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        android:text="Create Coupon"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/noCouponsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No coupons available"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/couponsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

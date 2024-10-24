@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:padding="8dp">
+
+    <!-- Date TextView -->
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+    <!-- Message Bubble -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Time TextView -->
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="12:23 pm"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/butgrey"
+            android:textColor="@android:color/black"/>
+
+        <!-- Message TextView -->
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hey Sir what are you doing tonight"
+            android:textSize="16sp"
+            android:background="@drawable/btnblueish"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--    android:layout_marginBottom="20dp"-->
+<!--android:padding="8dp">-->
+
+<!--&lt;!&ndash; You can customize this layout based on your needs &ndash;&gt;-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewTime"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="12:23"-->
+<!--        android:textStyle="bold"-->
+<!--        android:background="@drawable/butgrey"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="12sp" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textViewMessage"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:padding="10dp"-->
+<!--    android:textStyle="bold"-->
+<!--    android:text="Hey Sir what are you doing tonight"-->
+<!--    android:background="@drawable/btnblueish"-->
+<!--    android:layout_marginHorizontal="20dp"-->
+<!--    android:textColor="@color/white"-->
+<!--    android:textSize="16sp" />-->
+
+
+
+<!--</LinearLayout>-->
+
+
+
+
+
+

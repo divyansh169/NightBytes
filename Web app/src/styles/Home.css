@@ -1,0 +1,149 @@
+.home-container {
+    padding: 20px !important;
+    padding-top: 60px !important;
+}
+
+.location-info {
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 10px !important;
+    background: #f9f9f9 !important;
+}
+
+.dishes-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: center !important;
+    max-height: 500px; /* Adjust the height as necessary */
+    overflow-y: auto;
+}
+
+.dish-card {
+    border: 1px solid #ccc !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    width: 250px !important; /* Fixed width */
+    height: 350px !important; /* Fixed height */
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.dish-image {
+    width: 100% !important;
+    height: 150px !important; /* Fixed height */
+    object-fit: cover !important;
+}
+
+.dish-info {
+    padding: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex-grow: 1 !important;
+}
+
+.dish-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-left: 1px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+}
+
+.dish-name {
+    font-size: 18px !important;
+    color: #000 !important;
+    flex: 1 !important;
+    text-align: left !important;
+}
+
+.dish-price {
+    font-size: 16px !important;
+    color: #FA3E03 !important;
+    flex: 1 !important;
+    text-align: right !important;
+}
+
+.dish-attributes {
+    font-size: 14px !important;
+    margin-top: 8px !important;
+}
+
+.dish-stock {
+    font-size: 14px !important;
+    color: red !important;
+    margin-top: 8px !important;
+}
+
+.pagination {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important;
+}
+
+.pagination button {
+    padding: 10px 20px !important;
+    margin: 0 5px !important;
+    border: 1px solid #ccc !important;
+    background-color: #fff !important;
+    cursor: pointer !important;
+}
+
+.pagination button.active {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.order-counter {
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 10px !important;
+}
+
+.order-counter button {
+    background-color: #007bff !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px !important;
+    margin: 0 5px !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    transition: transform 0.2s, background-color 0.2s !important;
+}
+
+.order-counter button:hover {
+    background-color: #0056b3 !important;
+}
+
+.order-counter button:active {
+    transform: scale(0.9) !important;
+}
+
+.order-counter span {
+    margin: 0 10px !important;
+    font-size: 16px !important;
+    transition: transform 0.2s, color 0.2s !important;
+}
+
+.order-counter span.increase {
+    transform: scale(1.2) !important;
+    color: green !important;
+}
+
+.order-counter span.decrease {
+    transform: scale(1.2) !important;
+    color: red !important;
+}

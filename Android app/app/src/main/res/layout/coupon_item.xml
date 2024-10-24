@@ -1,0 +1,158 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/gray_more_light"
+    app:cardCornerRadius="30dp">
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"> -->
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:background="@color/light_crimson">
+
+            <!-- Left Part: Coupon Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/light_crimson">
+
+                <!-- Discount Text -->
+                <TextView
+                    android:id="@+id/discountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹100 discount"
+                    android:textColor="@android:color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="4dp"/>
+
+                <!-- Condition Text -->
+                <TextView
+                    android:id="@+id/conditionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on orders above ₹500"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+
+
+            </LinearLayout>
+
+            <!-- Dotted Line Separator -->
+            <View
+                android:layout_width="1dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+
+            <!-- Right Part: Coupon Code -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/crimson"
+                android:padding="10dp">
+
+                <!-- Coupon Code -->
+                <TextView
+                    android:id="@+id/couponCodeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUG15"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <!-- Delete Button for Seller -->
+                <ImageButton
+                    android:id="@+id/deleteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Delete Coupon"
+                    android:layout_gravity="end" />
+
+
+            </LinearLayout>
+
+<!--        <TextView -->
+<!--            android:id="@+id/couponCodeTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Coupon Code"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp"-->
+<!--            android:paddingBottom="4dp"/>-->
+
+        <TextView
+            android:id="@+id/couponTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Type"
+            android:visibility="gone"
+            android:paddingBottom="4dp"/>
+
+<!--        <TextView -->
+<!--            android:id="@+id/discountTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Discount"-->
+<!--            android:paddingBottom="4dp"/>-->
+
+        <TextView
+            android:id="@+id/minOrderValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum Order Value"
+            android:visibility="gone"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/freeItemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Item"
+            android:visibility="gone"
+            android:paddingBottom="4dp"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+

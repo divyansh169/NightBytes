@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:onClick="expand"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:contentPadding="20dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:animateLayoutChanges="true"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/kaiko"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="NOTE:"-->
+<!--                android:textColor="@color/red_app"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/annote"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:text="Ann from the seller"-->
+<!--        android:textColor="@color/red_app"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold" />-->
+
+
+<!--&lt;!&ndash;            &lt;!&ndash;            <com.airbnb.lottie.LottieAnimationView&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                android:id="@+id/payableorderr"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                android:layout_width="221dp"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                android:layout_height="221dp"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                android:layout_centerInParent="true"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                app:lottie_autoPlay="true"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                app:lottie_fileName="pendorderhistory.json"&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;                app:lottie_loop="true" />&ndash;&gt;&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclecart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_above="@+id/TotalBtns"
+        android:orientation="vertical" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/TotalBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/notifMessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Enter the notification message">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/notifNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Enter the number you want to send"
+                android:inputType="phone">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/send_notif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:hint="Send Notification"
+                android:background="@drawable/button_shape"
+                android:textStyle="bold"
+                app:rippleColor="@color/colorPrimaryDark">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/grouplay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/crgrp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btnblueish"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Create a Group"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/joingrp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btncrimson"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Join a Group"
+                android:textColor="@color/white">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/createlay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/deletecr"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnblueish"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Delete Group"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/detailcr"
+                android:layout_width="150dp"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btncrimson"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Group Details"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/additemcr"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="false"
+                android:text="Add Order"
+                android:textColor="@color/white">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/joinlay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="3"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/leavejoin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnblueish"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textAllCaps="false"
+                android:text="Leave Group"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/detailjoin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btncrimson"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Group Details"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/additemjoin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="false"
+                android:text="Add Order"
+                android:textColor="@color/white">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/gtlay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+<!--                <com.airbnb.lottie.LottieAnimationView-->
+<!--                    android:id="@+id/annote"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:lottie_autoPlay="true"-->
+<!--                    app:lottie_fileName="YouTubeBell.json"-->
+<!--                    app:lottie_loop="true" />-->
+
+<!--                <com.airbnb.lottie.LottieAnimationView-->
+<!--                    android:id="@+id/coup"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:lottie_autoPlay="true"-->
+<!--                    app:lottie_fileName="infoanim.json"-->
+<!--                    app:lottie_loop="true" />-->
+
+                <TextView
+                    android:id="@+id/GT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Grand Total:"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/annote"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.687"
+                    app:layout_constraintStart_toEndOf="@+id/GT"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="YouTubeBell.json"
+                    app:lottie_loop="true" />
+
+
+                <!--                             <com.airbnb.lottie.LottieAnimationView&ndash;&gt;-->
+<!--                                    android:id="@+id/newanim"-->
+<!--                                    android:layout_width="50dp"-->
+<!--                                    android:layout_height="40dp"-->
+<!--                                    android:layout_centerInParent="true"-->
+<!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                    app:layout_constraintEnd_toStartOf="@+id/specialdiscountanim"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="newboutton.json"-->
+<!--                                    app:lottie_loop="false" />-->
+
+
+
+                <!--                <com.airbnb.lottie.LottieAnimationView-->
+                <!--                    android:id="@+id/noticeanim"-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="40dp"-->
+                <!--                    android:layout_centerInParent="true"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toStartOf="@+id/openingclosinganim"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    app:lottie_autoPlay="true"-->
+                <!--                    app:lottie_fileName="notices.json"-->
+                <!--                    app:lottie_loop="false" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/finallay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/RM"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btnred"
+                android:gravity="center"
+                android:text="Remove All"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/PO"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="Place Order"
+                android:textColor="@color/white">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/instacc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blueish"
+                android:visibility="gone"
+                android:text="Inst Acc"
+                android:textColor="@color/white">
+
+            </Button>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/coup"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_fileName="coupons.json"-->
+<!--                app:lottie_loop="false" />-->
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/newadd"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_fileName="newboutton.json"-->
+<!--                app:lottie_loop="true" />-->
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/openingclosinganim"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_fileName="shop.json"-->
+<!--                app:lottie_loop="false" />-->
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/specialdiscount"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_fileName="discount.json"-->
+<!--                app:lottie_loop="true" />-->
+
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/todaysdeal"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                app:lottie_fileName="todaydeal.json"-->
+<!--                app:lottie_loop="false" />-->
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/annote"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                app:lottie_fileName="YouTubeBell.json"-->
+<!--                app:lottie_loop="true" />-->
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/feedback"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                android:layout_marginLeft="3dp"-->
+<!--                android:layout_marginRight="3dp"-->
+<!--                app:lottie_fileName="feedback.json"-->
+<!--                app:lottie_loop="false" />-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+        <TextView
+            android:id="@+id/txtGroupStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/crimson"
+            android:textSize="17dp">
+
+        </TextView>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

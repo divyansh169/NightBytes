@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cust_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:maxWidth="300dp"
+            android:minHeight="48dp"
+            android:text="Address"
+            android:textColor="@color/Black"
+            android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Grandtotalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:text="Total Price: Rs 500"
+            android:textColor="@color/gray"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/chefst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/fui_ic_check_circle_black_128dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/minago"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingHorizontal="10dp"-->
+<!--            android:paddingVertical="5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="43s"-->
+<!--            android:textSize="13sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:background="@drawable/butgrey"-->
+<!--            android:textColor="@color/darkgray"-->
+<!--            android:layout_marginHorizontal="15dp"/>-->
+
+    </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/countord"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/crimson"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="35dp" />-->
+
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/ordertame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:text="Order Time : "
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/minago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:background="@drawable/butgrey"
+                android:textColor="@color/darkgray"
+                android:layout_marginHorizontal="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/countord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/crimson"
+                android:textStyle="bold"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/View_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btnred"
+                android:text="View"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/direc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/btnblueish"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_weight="1"
+                android:text="Get Direction on Map"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/chitchat"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/ic_baseline_chat_24" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView3"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                app:srcCompat="@drawable/ic_cross" />-->
+
+        </LinearLayout>
+
+
+        <TableRow
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#6F878787" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <ProgressBar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--        </ProgressBar>-->
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            style="?android:attr/progressBarStyleHorizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:max="100"-->
+<!--            android:progress="0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/walletAmountTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:text="0%"-->
+<!--            android:textSize="20sp" />-->
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:progressDrawable="@drawable/custom_progress_bar"/>
+
+        <TextView
+            android:id="@+id/walletAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            android:text="0%"
+            android:textSize="20sp" />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/background_shape_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pending"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/pendnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/crimson"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Waiting"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/waitnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/crimson"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Prepared"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/prepnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/crimson"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="287dp"
+            android:layout_height="442dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/laytot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_shape_gray"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="220dp"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:weightSum="2"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Wallet :"-->
+                <!--                    android:textColor="@color/gray"-->
+                <!--                    android:textSize="23dp"-->
+                <!--                    android:textStyle="bold">-->
+
+                <!--                </TextView>-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:text="Rs. 749"-->
+                <!--                        android:textColor="@color/gray"-->
+                <!--                        android:textSize="23dp"-->
+                <!--                        android:textStyle="bold">-->
+
+                <!--                    </TextView>-->
+                <!--                </LinearLayout>-->
+
+
+                <!--                <Button-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                </Button>-->
+
+                <!--                </LinearLayout>-->
+
+
+                <!--            <LinearLayout-->
+                <!--                android:id="@+id/linearlayout"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_alignParentStart="true"-->
+                <!--                android:layout_alignParentLeft="true"-->
+                <!--                android:layout_alignParentTop="true"-->
+                <!--                android:layout_alignParentEnd="true"-->
+                <!--                android:layout_alignParentRight="true"-->
+                <!--                android:layout_alignParentBottom="true"-->
+                <!--                android:background="@color/gray_border"-->
+                <!--                android:orientation="vertical"-->
+                <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="20dp"-->
+                <!--                    android:orientation="vertical">-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="Control Centre"-->
+                <!--                        android:textColor="@color/gray"-->
+                <!--                        android:textSize="18dp"-->
+                <!--                        android:textStyle="bold">-->
+
+                <!--                    </TextView>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:orientation="vertical">-->
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/ann_to_all_city_customers"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:hint="ann_to_all_city_customers">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/send1"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/rzp_green_button"
+                        android:paddingLeft="10dp"
+                        android:text="Send"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <!--                <EditText-->
+                    <!--                    android:id="@+id/ann_to_all__customers"-->
+                    <!--                    android:layout_width="220dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="15dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_marginBottom="15dp"-->
+                    <!--                    android:hint="ann_to_all_city_customers">-->
+
+                    <!--                </EditText>-->
+                    <!--                <EditText-->
+                    <!--                    android:id="@+id/ann_to_all_city_customers"-->
+                    <!--                    android:layout_width="220dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="15dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_marginBottom="15dp"-->
+                    <!--                    android:hint="ann_to_all_city_customers">-->
+
+                    <!--                </EditText>-->
+                    <!--                <EditText-->
+                    <!--                    android:id="@+id/ann_to_all_city_customers"-->
+                    <!--                    android:layout_width="220dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="15dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_marginBottom="15dp"-->
+                    <!--                    android:hint="ann_to_all_city_customers">-->
+
+                    <!--                </EditText>-->
+                    <!--                <EditText-->
+                    <!--                    android:id="@+id/ann_to_all_city_customers"-->
+                    <!--                    android:layout_width="220dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="15dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_marginBottom="15dp"-->
+                    <!--                    android:hint="ann_to_all_city_customers">-->
+
+                    <!--                </EditText>-->
+                    <!--                <EditText-->
+                    <!--                    android:id="@+id/ann_to_all_city_customers"-->
+                    <!--                    android:layout_width="220dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="15dp"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_marginBottom="15dp"-->
+                    <!--                    android:hint="ann_to_all_city_customers">-->
+
+                    <!--                </EditText>-->
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/post_dish"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:drawableLeft="@drawable/ic_assignment_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="Post New Product"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <Button
+                    android:id="@+id/post_banners"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:drawableLeft="@drawable/newbanner"
+                    android:paddingLeft="10dp"
+                    android:text="Post New Banner"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/resetcont"-->
+                <!--                    android:layout_width="220dp"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:layout_gravity="center_horizontal"-->
+                <!--                    android:layout_margin="15dp"-->
+                <!--                    android:background="@drawable/btncrimson"-->
+                <!--                    android:drawableLeft="@drawable/reset"-->
+                <!--                    android:paddingLeft="10dp"-->
+                <!--                    android:text="Reset Counter"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="18dp" />-->
+
+                <Button
+                    android:id="@+id/addrzpid"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Add/Update Details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/addcop"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Add Coupons"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/addord"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Add Orders"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/chati"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Chats and Messages"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/pastord"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btncrimson"
+                    android:text="Sales and Order History"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/stati"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btncrimson"
+                    android:text="Order Stats"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/billi"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btncrimson"
+                    android:text="Order Bills"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/veflay"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btncrimson"
+                    android:text="Verify Your Phone"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/recwal"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Recharge Wallet"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/setdir"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Set Location"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/techsupp"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Tech Help Support"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <Button
+                    android:id="@+id/enableautaccept"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Enable Accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/disableautaccept"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Disable Accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/accpetenabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Accept is Enabled! Orders will come!"
+                    android:textColor="@color/green">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/accpetdisabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Accept is Disabled! Orders will not come!"
+                    android:textColor="@color/red_app"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/enablepieond"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Enable Pay on Delivery"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/disablepieond"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Disable Pay on Delivery"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/podenabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="POD is Enabled! Customers can use Pay on Delivery to order!"
+                    android:textColor="@color/green">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/poddisabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="POD is Disabled! Customers cannot use Pay on Delivery to order"
+                    android:textColor="@color/red_app"
+                    android:visibility="gone">
+
+                </TextView>
+
+<!--                <Button-->
+<!--                    android:id="@+id/enablepaynowoffline"-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_margin="15dp"-->
+<!--                    android:background="@drawable/btncrimson"-->
+<!--                    android:text="Click to Enable Pay Now (offline)"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:visibility="gone" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/disablepaynowoffline"-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_margin="15dp"-->
+<!--                    android:background="@drawable/btncrimson"-->
+<!--                    android:text="Click to Disable Pay Now (offline)"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="18dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/pnoenabledtext"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Pay Now (offline) is Enabled! Customers can now pay for their orders offline beforehand!"-->
+<!--                    android:textColor="@color/green">-->
+
+<!--                </TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/pnodisabledtext"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Pay Now (offline) is Disabled! Customers cannot pay for their orders offline beforehand!"-->
+<!--                    android:textColor="@color/red_app"-->
+<!--                    android:visibility="gone">-->
+
+<!--                </TextView>-->
+
+                <Button
+                    android:id="@+id/enabledel"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Enable Delivery Option"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/disabledel"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Disable Delivery Option"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/deliveryenabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Delivery Option is Enabled! Customer can choose delivery option"
+                    android:textColor="@color/green">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/deliverydisabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Delivery Option is Disabled! Customer cannot choose delivery option"
+                    android:textColor="@color/red_app"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/enabletw"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Enable Takeaway Option"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/disabletw"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Disable Takeaway Option"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/twenabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Takeaway Option is Enabled! Customer can choose takeaway option"
+                    android:textColor="@color/green">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/twdisabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Takeaway Option is Disabled! Customer cannot choose takeaway option"
+                    android:textColor="@color/red_app"
+                    android:visibility="gone">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/enablepb"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Enable Dine-In Option"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/disablepb"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btncrimson"
+                    android:text="Click to Disable Dine-In Option"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/pbenabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Dine-In Option is Enabled! Customer can choose Dine-In option"
+                    android:textColor="@color/green">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/pbdisabledtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Dine-In Option is Disabled! Customer cannot choose Dine-In option"
+                    android:textColor="@color/red_app"
+                    android:visibility="gone">
+
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/checkpend"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btnblueish"
+                    android:text="Check Pending Orders Page"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/checkordertoprepare"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btnblueish"
+                    android:text="Check Orders to be Prepared Page"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/checkpreparedorders"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/btnblueish"
+                    android:text="Check Prepared Orders Page"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <!--                </LinearLayout>-->
+                <!--                </LinearLayout>-->
+
+                <!--                <TableRow-->
+                <!--                    android:id="@+id/hr"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="2dp"-->
+                <!--                    android:layout_marginBottom="15dp"-->
+                <!--                    android:background="@color/gray" />-->
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="20dp"-->
+                <!--                    android:orientation="vertical">-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="Add/Update your details here:"-->
+                <!--                        android:textColor="@color/gray"-->
+                <!--                        android:textSize="18dp"-->
+                <!--                        android:textStyle="bold">-->
+
+                <!--                    </TextView>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        -->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        -->
+                <!--                    </LinearLayout>-->
+                <!--                </LinearLayout>-->
+
+                <Button
+                    android:id="@+id/addcoup"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="Add/Update Details"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/stats"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btnred"
+                    android:text="View Orders Stats"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/notifMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Enter the notification message">
+
+                    </EditText>
+
+
+                    <EditText
+                        android:id="@+id/notifNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:hint="Enter the number +91xxx"
+                        android:inputType="phone">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/send_notif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/button_shape"
+                        android:hint="Send Notification"
+                        android:textStyle="bold"
+                        app:rippleColor="@color/colorPrimaryDark">
+
+                    </Button>
+
+
+                </LinearLayout>
+
+
+                <!--                <TableRow-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="2dp"-->
+                <!--                    android:layout_marginBottom="15dp"-->
+                <!--                    android:background="@color/gray" />-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="20dp"-->
+                <!--                    android:orientation="vertical">-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="Verify Phone to get Notifications:"-->
+                <!--                        android:textColor="@color/gray"-->
+                <!--                        android:textSize="18dp"-->
+                <!--                        android:textStyle="bold">-->
+
+                <!--                    </TextView>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="15dp"-->
+                <!--                        android:orientation="horizontal"-->
+                <!--                        android:weightSum="2">-->
+
+                <!--                        -->
+                <!--                    </LinearLayout>-->
+
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="15dp"-->
+                <!--                        android:orientation="horizontal"-->
+                <!--                        android:weightSum="2">-->
+
+                <!--                        -->
+                <!--                    </LinearLayout>-->
+                <!--                </LinearLayout>-->
+
+                <!--                <TableRow-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="2dp"-->
+                <!--                    android:layout_marginBottom="15dp"-->
+                <!--                    android:background="@color/gray" />-->
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="20dp"-->
+                <!--                    android:orientation="vertical">-->
+
+
+                <!--            <TextView-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="Enable/Disable Accepting Orders from here:"-->
+                <!--                android:textColor="@color/gray"-->
+                <!--                android:textSize="18dp"-->
+                <!--                android:textStyle="bold">-->
+
+                <!--            </TextView>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="15dp"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:weightSum="2">-->
+
+
+                <!--                </LinearLayout>-->
+                <!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/autolayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Delivery Charge: ₹"
+                            android:textColor="@color/darkgray"
+                            android:textSize="17dp" />
+
+                        <EditText
+                            android:id="@+id/deliverychargetextauto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="(if any)"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textSize="16dp">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/paydlbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/button_shape"
+                            android:gravity="center"
+                            android:text="Enable POD"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/nopaybtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/btnred"
+                            android:gravity="center"
+                            android:text="Disable POD"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/confirmbtn"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btnblueish"
+                        android:text="Confirm To Start Automate"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <!--        <Button-->
+                <!--            android:id="@+id/disableautaccept"-->
+                <!--            android:layout_width="180dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center_horizontal"-->
+                <!--            android:layout_marginTop="30dp"-->
+                <!--            android:layout_marginBottom="30dp"-->
+                <!--            android:background="@drawable/btnred"-->
+                <!--            android:text="Disable Auto Accept"-->
+                <!--            android:visibility="gone"-->
+                <!--            android:textColor="@color/white" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/fjnfjfrknd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/background_shape"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/pendcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Pending Orders: "
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Pending Orders: "
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending Orders: "
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_shape_gray"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/wallay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Wallet"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/wal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="@color/crimson"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Total Orders"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/totordnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/crimson"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Total Revenue"
+                    android:textColor="@color/gray"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/totrevnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/crimson"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:orientation="vertical">-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:text="Prepared"-->
+            <!--                android:textColor="@color/gray"-->
+            <!--                android:textSize="25dp"-->
+            <!--                android:textStyle="bold">-->
+
+            <!--            </TextView>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/prepnumber"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:text="5"-->
+            <!--                android:textColor="@color/crimson"-->
+            <!--                android:textSize="25dp"-->
+            <!--                android:textStyle="bold">-->
+
+            <!--            </TextView>-->
+
+            <!--        </LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

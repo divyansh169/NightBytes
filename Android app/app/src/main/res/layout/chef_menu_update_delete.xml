@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#fff"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:textColor="@color/Blacklogo"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="9dp"
+                android:maxWidth="220dp"
+                android:layout_marginBottom="9dp"
+                android:text="Name of Product"
+                android:textSize="23dp"
+                android:textAllCaps="false" />
+
+<!--                <Switch-->
+<!--                    android:id="@+id/sw"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:onClick="onSwitchClick"-->
+<!--                    android:layout_marginLeft="22dp"-->
+<!--                    android:layout_height="25dp">-->
+
+<!--                </Switch>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/switchbtnoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/btnred"
+                    android:text="OFF">
+
+                </Button>
+                    <Button
+                    android:id="@+id/switchbtnon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rzp_green_button"
+                    android:text="ON">
+
+                </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/productattrbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center_vertical"
+                        android:text="Attribute"
+                        android:maxWidth="250dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/red_app"
+                        android:textSize="17dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="Stock Count : "
+                    android:textAllCaps="false"
+                    android:textColor="@color/red_app"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/stockcntbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="in stock"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red_app"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fillViewport="true">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal" >-->
+
+
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="in stock"-->
+<!--                android:backgroundTint="@color/green"-->
+<!--                android:textStyle="bold">-->
+<!--            </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="out of stock"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="being prepared"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Not Ready"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Ready!"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Not Available"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Only TakeAway"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Available"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Only Delivery"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Limited"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Fast Delivery"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Fast TakeAway"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Ready for Delivery"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Coming soon"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Coming tomorrow"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="IN evening/snacks"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="IN afternoon/lunch"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="IN morning/breakfast"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Not Ready for Delivery"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Ready for TakeAway"-->
+<!--                    android:backgroundTint="@color/red_app"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Not Ready for TakeAway"-->
+<!--                    android:backgroundTint="@color/green"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </Button>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </HorizontalScrollView>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/productattribute"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textSize="12dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:hint="Product Attributes"-->
+<!--            />-->
+
+        <TableRow
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="@color/lightgray" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

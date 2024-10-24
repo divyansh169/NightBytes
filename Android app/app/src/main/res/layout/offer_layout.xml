@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="88dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/offer_iv"
+        android:layout_width="85dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_height="85dp"
+        app:civ_border_color="#dc143c"
+        app:civ_border_width="2dp"/>
+
+</RelativeLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/offer_iv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/ic_home_black_24dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardUseCompatPadding="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="3dp"-->
+<!--        android:layout_marginRight="3dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:layout_marginBottom="3dp"-->
+<!--        app:cardUseCompatPadding="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <com.denzcoskun.imageslider.ImageSlider-->
+<!--            android:id="@+id/image_slider"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="180dp"-->
+<!--            app:iss_auto_cycle="true"-->
+<!--            app:iss_period="3000"-->
+<!--            app:iss_delay="3000"-->
+<!--            app:iss_text_align="CENTER"/>-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/offer_iv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="175dp"-->
+<!--            android:clickable="false"-->
+<!--            android:longClickable="false"-->
+<!--            android:contextClickable="false"-->
+<!--            android:scaleType="fitXY" />-->
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/offer_iv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="175dp" />-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</RelativeLayout>-->

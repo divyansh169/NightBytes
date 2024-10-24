@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ListView-->
+<!--        android:id="@+id/listViewChatSeller"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:transcriptMode="alwaysScroll"-->
+<!--        android:stackFromBottom="true"-->
+<!--        android:divider="@android:color/transparent"-->
+<!--        android:dividerHeight="10dp"/>-->
+    <ListView
+        android:id="@+id/listViewChatSeller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutInputSeller"
+        android:layout_alignParentTop="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/notlay"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/notifMessage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:hint="Enter the notification message">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/notifNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:hint="Enter the number you want to send"
+            android:inputType="phone">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/send_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_shape"
+            android:hint="Send Notification"
+            android:textStyle="bold"
+            app:rippleColor="@color/colorPrimaryDark">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInputSeller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editTextMessageSeller"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message"/>
+
+        <Button
+            android:id="@+id/buttonSendSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"/>
+    </LinearLayout>
+
+</RelativeLayout>
