@@ -20,7 +20,7 @@ Technologies Used:
 
 Features:
 
-- Developed a comprehensive online ordering system deployed across multiple platforms.
+- Developed a comprehensive online ordering system deployed across multiple platforms with common database.
 
 - Successfully deployed at LNMIIT College **since Sept'2023** for **night deliveries**, dine-in and takeaway orders, serving **over 3000 active users** with **10,000+ orders** till date since launch with **5 simultaneous operating stores**.
 
