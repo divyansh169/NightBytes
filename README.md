@@ -5,6 +5,8 @@ Technologies Used:
 - Android App (Java and XML with Firebase Database): Java, XML, Firebase, Firebase Cloud Functions, Firebase Cloud Messaging, Dialogflow
 
   - App Link : https://play.google.com/store/apps/details?id=com.citymart.app
+ 
+  - App Images : https://drive.google.com/file/d/10Hbe-C44_NauabJQ0qZLSvHDljYkFFD0/view?usp=drive_link
 
 - Web App (React JS with Firebase Backend): HTML, CSS, Javascript, React JS, Redux, Firebase (Database), Node.js, Custom Chatbot
 
@@ -20,9 +22,9 @@ Features:
 
 - Developed a comprehensive online ordering system deployed across multiple platforms.
 
-- Successfully deployed at LNMIIT College for night deliveries, dine-in and takeaway orders, serving over 2500 active users.
+- Successfully deployed at LNMIIT College **since Sept'2023** for **night deliveries**, dine-in and takeaway orders, serving **over 3000 active users** with **10,000+ orders** till date since launch with **5 simultaneous operating stores**.
 
-- Supports multi-vendor system, real-time order tracking, advanced notifications, and secure payment integration.
+- Supports **multi-vendor** system, real-time order tracking, advanced notifications, and secure payment gateway integration.
 
 - Implemented key features such as
   - user authentication,
