@@ -2,7 +2,7 @@
 
 Technologies Used:
 
-- Android App (Firebase Backend): Java, XML, Firebase, Firebase Cloud Functions, Firebase Cloud Messaging, Dialogflow
+- Android App (Firebase Backend): Java, XML, Firebase, Firebase Cloud Functions, Firebase Cloud Messaging, Dialogflow, Razorpay API
 
   - App Link : https://play.google.com/store/apps/details?id=com.citymart.app
  
@@ -14,7 +14,7 @@ Technologies Used:
 
 - Web App (Java Backend): React JS, Redux, Spring Boot, Hibernate, MySQL, JWT, AWS EC2, AWS S3, AWS RDS, Docker, Kubernetes, Jenkins
 
-- Web App (MERN Backend): React JS, Redux, Node.js, Express.js, MongoDB, Mongoose, JWT, REST APIs, AWS (EC2, S3, RDS), Docker, Kubernetes, GraphQL, Socket.IO, Postman (API Testing), Nginx (Reverse Proxy), Webpack, Babel
+- Web App (MERN Backend): React JS, Redux, Node.js, Express.js, MongoDB, Mongoose, JWT, REST APIs, AWS (EC2, S3, RDS), Docker, Kubernetes, GraphQL, Socket.IO, Postman (API Testing)
 
 - Custom Chatbot: Python, React Js, Fine-Tuned LLM (OpenAI GPT-4), CLIP, TensorFlow, Docker, Kubernetes, Terraform, Flask, FastAPI, AWS (EC2, S3), GCP, Apache Kafka, TensorFlow Lite, ONNX Runtime, Go, Rust
 
