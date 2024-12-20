@@ -35,6 +35,7 @@ Features:
   - stock and order management,
   - sales statistics and analysis,
   - in-app chat with vendors,
+  - Razorpay Payment Gateway
   - order history,
   - group ordering system,
   - split bills,
