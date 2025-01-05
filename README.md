@@ -6,7 +6,7 @@ Technologies Used:
 
   - App Link : https://play.google.com/store/apps/details?id=com.citymart.app
  
-  - App Images : https://drive.google.com/file/d/10Hbe-C44_NauabJQ0qZLSvHDljYkFFD0/view?usp=drive_link
+  - App Images/PPT : https://drive.google.com/file/d/10Hbe-C44_NauabJQ0qZLSvHDljYkFFD0/view?usp=drive_link
 
 - Web App (Firebase Backend): HTML, CSS, Javascript, React JS, Redux, Firebase (Database), Node.js, Custom Chatbot
 
